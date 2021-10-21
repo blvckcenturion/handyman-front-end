@@ -21,3 +21,22 @@ body{
     background-color: $white;
 }
 
+.page-layout{
+    min-height: 95vh;
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    border: {
+        top: 1px solid $light-black;
+    };
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+
+}

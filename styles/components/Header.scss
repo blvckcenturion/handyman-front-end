@@ -18,7 +18,7 @@
         justify-content:space-between;
         z-index: 10;
         border: {
-            bottom: 1px solid $black;
+            bottom: 1px solid $light-black;
         }
         &-title{
             width: 20%;
@@ -40,8 +40,8 @@
             align-items: center;
             justify-content: center;
             svg{
-                width: 2.5rem;
-                height: 2.5rem;
+                width: 2rem;
+                height: 2rem;
             
             }
         }
