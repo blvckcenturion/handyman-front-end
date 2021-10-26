@@ -20,15 +20,48 @@
             text-align: center;
             margin: 0 40px;
         }
-        form{
+        &-form{
             width: 80%;
             display: flex;
+            height: 50%;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             div, select, button{
                 margin: 10px;
                 width: 100%;
+            }
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: row;
+                border: 1px solid $light-black;
+                padding: 20px 0;
+                border-radius: 15px;
+                svg{
+                    width: 30px;
+                }
+                input{
+                    border: none;
+                    width: 80%;
+                    background-color: transparent;
+                    
+                }
+            }
+            select{
+                padding: 20px 20px;
+                border: 1px solid $light-black;
+                background-color: transparent;
+                border-radius: 15px;
+                text-align: center;
+            }
+            button{
+                background-color: $black;
+                color: $white;
+                border: none;
+                padding: 25px;
+                border-radius: 15px;
             }
         }
     }

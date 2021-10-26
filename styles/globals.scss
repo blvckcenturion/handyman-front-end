@@ -40,3 +40,7 @@ footer{
     height: 8vh;
 
 }
+
+input:focus-visible, select:focus-visible{
+    outline: none;
+}
