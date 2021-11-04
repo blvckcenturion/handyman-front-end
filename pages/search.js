@@ -1,4 +1,4 @@
-import React from 'react'
+/* eslint-disable @next/next/no-img-element */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { faStar as faStarOutline } from '@fortawesome/free-regular-svg-icons'
@@ -25,18 +25,18 @@ export default Search
 
 const Card = () => {
     return (
-        <div className="card">
+        <div className="search-card">
             <div className="card-image">
                 <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/>
             </div>
-            <div className="card-content">
+            <div className="search-card-content">
                 <h3>Carlos Herrera Santana</h3>
                 <p>10 años de experiencia</p>
-                <div className="card-content-rating">
+                <div className="search-card-content-rating">
                     <p>(10)</p>
                     <Rating rating={4}/>
                 </div>
-                <button className="card-content-btn" onClick={() => console.log("hola")}>
+                <button className="search-card-content-btn" onClick={() => console.log("hola")}>
                     Saber mas
                 </button>
             </div>

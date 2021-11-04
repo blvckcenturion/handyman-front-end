@@ -1,0 +1,41 @@
+.categories-page{
+    width: 80%;
+    min-height: 100%;
+    text-align: center;
+    &-results{
+        width: 100%;
+        border-top: 1px solid $light-black;
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        @include md{
+            grid-template-columns: repeat(2,1fr);
+        }
+        @include lg{
+            grid-template-columns: repeat(3,1fr);
+        }  
+        margin-bottom: 100px;
+        gap: 20px 0;
+    }
+}
+
+.category-card{
+    height: 35vh;
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px;
+    border: 1px solid $light-black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h3{
+        font-family: $primary-font;
+        font-size: 2rem;
+    }
+    &-icon{
+        height: 40%;
+        color: $green;
+    }
+}

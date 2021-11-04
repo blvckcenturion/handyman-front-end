@@ -6,8 +6,6 @@
         width: 100%;
         border-top: 1px solid $light-black;
         padding-top: 30px;
-
-
         display: grid;
         grid-template-columns: 1fr;
         @include md{
@@ -19,12 +17,12 @@
 
         margin-bottom: 100px;
 
-gap: 20px 0;
+        gap: 20px 0;
     }
         
 }
 
-.card{
+.search-card{
     height: 45vh;
     border: 1px solid $light-black;
     border-radius: 10px;
