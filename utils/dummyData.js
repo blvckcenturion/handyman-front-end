@@ -6,3 +6,7 @@ export const AVAILABLE_CITIES = [
     'Oruro',
     'Potosi',
 ]
+
+export const SEARCH_RESULTS = [
+    
+]

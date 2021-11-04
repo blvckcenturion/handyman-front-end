@@ -19,6 +19,7 @@
 body{
     font-family: $secondary-font, sans-serif;
     background-color: $white;
+    transition: all 1s ease-in;
 }
 
 .page-layout{
@@ -44,3 +45,4 @@ footer{
 input:focus-visible, select:focus-visible{
     outline: none;
 }
+

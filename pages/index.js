@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 export default function Home() {
   return (
-    <div className="index-page-content">
+    <div className="index-page">
       <div className="search-box">
         <div className="search-box-title">
           <h1>ENCUENTRA PROFESIONALES CAPACITADOS EN TU AREA</h1>
@@ -18,7 +18,7 @@ export default function Home() {
             <input type="text" id="query" required placeholder="ej: Plomero" />
           </div>
           <select name="city" id="city">
-            {AVAILABLE_CITIES.map((city, i) => <option key={i} value={city}>{ city}</option>)}
+          {AVAILABLE_CITIES.map((city, i) => <option key={i} value={city}>{ city}</option>)}
           </select>
           <button>Consigue ayuda hoy</button>
         </form>
