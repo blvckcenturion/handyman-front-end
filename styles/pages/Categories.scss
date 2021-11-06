@@ -2,9 +2,16 @@
     width: 80%;
     min-height: 100%;
     text-align: center;
+    h1{
+        font-size: 2rem;
+        margin: 4rem 0;
+        color: getColor(text);
+        font-family: $primary-font;
+    }
+
     &-results{
         width: 100%;
-        border-top: 1px solid $light-black;
+        border-top: 1px solid getColor(border);
         padding-top: 30px;
         display: grid;
         grid-template-columns: 1fr;
@@ -25,11 +32,12 @@
     align-self: center;
     justify-self: center;
     border-radius: 10px;
-    border: 1px solid $light-black;
+    border: 1px solid getColor(border);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: getColor(text);
     h3{
         font-family: $primary-font;
         font-size: 2rem;

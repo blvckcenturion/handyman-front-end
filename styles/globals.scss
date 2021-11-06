@@ -17,8 +17,8 @@
 }
 
 body{
-    font-family: $secondary-font, sans-serif;
-    background-color: $white;
+    font-family: getColor, sans-serif;
+    background-color: getColor(bg);
     transition: all 1s ease-in;
 }
 
@@ -33,16 +33,16 @@ body{
 
 footer{
     border: {
-        top: 1px solid $light-black;
+        top: 1px solid getColor(border);
     };
     display: flex;
     align-items: center;
     justify-content: center;
     height: 8vh;
+    color: getColor(text);
 
 }
 
 input:focus-visible, select:focus-visible{
     outline: none;
 }
-

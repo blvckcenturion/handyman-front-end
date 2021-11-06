@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $white;
+    background-color: getColor(bg);
 
     .header{
         width: 100%;
@@ -18,7 +18,7 @@
         justify-content:space-between;
         z-index: 10;
         border: {
-            bottom: 1px solid $light-black;
+            bottom: 1px solid getColor(border);
         }
         &-title{
             width: 20%;
@@ -29,7 +29,7 @@
             font-size: 2rem;
             font-family: $primary-font;
             a{
-                color: $black;
+                color: getColor(text);
                 text-decoration: none;
             }
         }
@@ -42,14 +42,14 @@
             svg{
                 width: 2rem;
                 height: 2rem;
-            
+                color: getColor(text);
             }
         }
         
     }
     .navigation{
         position: absolute;
-        background-color: $white;
+        background-color: getColor(bg);
         top: 0;
         left: 0;
         z-index: 2;
@@ -58,7 +58,7 @@
         justify-content: space-evenly;
         align-items: center;
         a{
-            color: $black;
+            color: getColor(text);
             text-decoration: none;
             font-size: 4rem;
             -webkit-user-select: none;

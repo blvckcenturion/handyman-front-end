@@ -7,6 +7,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Header = () => {
     const { width, height } = useWindowSize()
     const [isOpen, setIsOpen] = useState(false)
+
+    const handleClick = () => {
+        setIsOpen(!isOpen)
+    }
+
     return (
         <div className="header-wrapper">
             <div className="header">
@@ -18,10 +23,10 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className="header-nav-toggler">
-                    <FontAwesomeIcon icon={faPlus} onClick={ () => setIsOpen(!isOpen)}/>
+                    <FontAwesomeIcon icon={faPlus} onClick={ handleClick }/>
                 </div>
             </div>
-            { isOpen && <NavLinks /> }
+            {isOpen && <NavLinks setIsOpen={ handleClick}/> }
         </div>
     )
 }
@@ -29,24 +34,24 @@ const Header = () => {
 export default Header
 
 
-const NavLinks = () => {
+const NavLinks = ({setIsOpen}) => {
 
     const { width, height } = useWindowSize()
 
     return (
         <div className="navigation" style={{width, height}}>
-            <Link href="/categories">
-                <a>
+            <Link href="/categories" >
+                <a onClick={setIsOpen}>
                 Categorias  
                 </a>
             </Link>
             <Link href="/login">
-                <a>
+                <a onClick={setIsOpen}>
                     Inicia Sesion
                 </a>
             </Link>
             <Link href="/register">
-                <a>
+                <a onClick={setIsOpen}>
                     Ofrece tus Servicios
                 </a>
             </Link>

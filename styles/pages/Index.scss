@@ -1,14 +1,17 @@
 .index-page{
     width: 60%;
+    input, select{
+        color: getColor(text);
+    }
     .search-box{
-        border: 1px solid $light-black;
+        border: 1px solid getColor(border);
         border-radius: 20px;
         display: flex;
         height: 70vh;
         width: 100%;
         align-items: center;
         flex-direction: column;
-        color: $black;
+        color: getColor(text);
         &-title{
             font-family: $primary-font;
             font-size: 1.2rem;
@@ -36,7 +39,7 @@
                 align-items: center;
                 justify-content: space-around;
                 flex-direction: row;
-                border: 1px solid $light-black;
+                border: 1px solid getColor(border);
                 padding: 20px 0;
                 border-radius: 15px;
                 svg{
@@ -45,20 +48,19 @@
                 input{
                     border: none;
                     width: 80%;
-                    background-color: transparent;
-                    
+                    background-color: getColor(bg);
                 }
             }
             select{
                 padding: 20px 20px;
-                border: 1px solid $light-black;
+                border: 1px solid getColor(border);
                 background-color: transparent;
                 border-radius: 15px;
                 text-align: center;
             }
             button{
-                background-color: $black;
-                color: $white;
+                background-color: getColor(text);
+                color: getColor(bg);
                 border: none;
                 padding: 25px;
                 border-radius: 15px;
