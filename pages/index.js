@@ -26,7 +26,7 @@ export default function Home() {
         </div>
         <form className="search-box-form" onSubmit={ handleSubmit }>
           <div>
-            <FontAwesomeIcon icon={faSearch}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faSearch}/>
             <input type="text" id="query" required placeholder="ej: Plomero" onChange={(e) => setSearch(e.target.value)} value={ search }/>
           </div>
           <select name="city" id="city" onChange={(e) => setCity(e.target.value)}>
