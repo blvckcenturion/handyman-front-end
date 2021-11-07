@@ -48,7 +48,7 @@
                 input{
                     border: none;
                     width: 80%;
-                    background-color: getColor(bg);
+                    background-color: transparent
                 }
             }
             select{
@@ -59,8 +59,8 @@
                 text-align: center;
             }
             button{
-                background-color: getColor(text);
-                color: getColor(bg);
+                background-color: $green;
+                color: map-get($colors-dark, bg );
                 border: none;
                 padding: 25px;
                 border-radius: 15px;
