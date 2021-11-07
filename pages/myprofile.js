@@ -11,8 +11,8 @@ const Myprofile = () => {
     )
 }
 
-const Card = () => {
+// const Card = () => {
     
-}
+// }
 
-export default myprofile
+export default Myprofile
