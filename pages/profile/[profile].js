@@ -9,10 +9,11 @@ const Profile = () => {
         <div className="profile-page">
             <div className="profile-page-basic-info">
                 <div className="profile-page-basic-info-img">
-                    {/* <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/> */}
+                    
+                    <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/>
                 </div>
                 <div className="profile-page-basic-info-cont">
-                    <h1>CARLOS SANTANA.</h1>
+                    <h1>CARLOS SANTANA</h1>
                     <h3>10 años de experiencia</h3>
                     <p>Hola! mi nombre es Carlos, estoy en el campo de la fontaneria hace ya bastante tiempo, tengo bastantes habilidades y estoy seguro que puedo ayudarte a resolver todos tus problemas de fontaneria.</p>
                     <div>
@@ -23,13 +24,16 @@ const Profile = () => {
                 </div>
             </div>
             <div className="profile-page-work-desc">
-                <h2>Sobre los servicios que realiza.</h2>
+                <h2>SERVICIOS QUE REALIZA</h2>
                 <p>Tengo más de 10 años de experiencia brindando servicios de fontaneria excepcionales a una variedad de clientes / clientas. Garantizado para brindar un alto nivel de profesionalismo, confiabilidad y puntualidad, realizo distintos tipos de trabajos, incluyendo mantenimiento, instalacion, entre otros</p>
             </div>
             <div className="profile-page-previous-work">
-                <h2>TRABAJOS PREVIOS DE CARLOS.</h2>
+                <h2>TRABAJOS PREVIOS DE CARLOS SANTANA</h2>
                 <div>
                     <PreviousWorkCard/>
+                    <PreviousWorkCard />
+                    <PreviousWorkCard />
+                    <PreviousWorkCard />
                     <PreviousWorkCard/>
                 </div>
             </div>
@@ -37,10 +41,13 @@ const Profile = () => {
                 <div className="profile-page-reviews-opt">
                     <div>
                         <h2>Opiniones sobre Carlos</h2>
+    
                     </div>
                     <button>Dejar Opinion</button>
                 </div>
                 <div className="profile-page-reviews-indv">
+                    <Review/>
+                    <Review />
                     <Review/>
                     <Review/>
                 </div>
@@ -52,7 +59,7 @@ const Profile = () => {
 const PreviousWorkCard = () => {
     return (
         <div className="previous-work-card">
-            <img src="" alt="" />
+            <img src="https://images.pexels.com/photos/1029635/pexels-photo-1029635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
             <h4>Cambio de tuberias</h4>
         </div>
     )
