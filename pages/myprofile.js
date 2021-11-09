@@ -11,8 +11,5 @@ const Myprofile = () => {
     )
 }
 
-// const Card = () => {
-    
-// }
 
 export default Myprofile
