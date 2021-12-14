@@ -3,13 +3,14 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import Rating from '../../components/Rating'
+import Heading from '../../components/Heading'
 
 const Profile = () => {
     return (
         <div className="profile-page">
+            <Heading title={"Pagina de perfil"}/>
             <div className="profile-page-basic-info">
                 <div className="profile-page-basic-info-img">
-                    
                     <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/>
                 </div>
                 <div className="profile-page-basic-info-cont">

@@ -17,6 +17,8 @@
         flex-direction: row;
         justify-content:space-between;
         z-index: 10;
+        opacity: 0;
+        transform: scaleX(0);
         border: {
             bottom: 1px solid getColor(border);
         }
@@ -25,6 +27,7 @@
             @include lg{
                 width: 20%;
             }
+            overflow: hidden;
             height: 100%;
             display: flex;
             align-items: center;
@@ -34,10 +37,12 @@
             a{
                 color: getColor(text);
                 text-decoration: none;
+                opacity: 0;
             }
         }
         &-nav-toggler{
             height: 100%;
+            overflow: hidden;
             width: 20%;
             display: flex;
             align-items: center;
@@ -47,16 +52,19 @@
                 height: 2rem;
                 color: getColor(text);
             }
+            opacity: 0;
         }
         
     }
     .navigation{
         position: absolute;
-        background-color: getColor(bg);
+        
+        background-color: $green;
         top: 0;
         left: 0;
         z-index: 2;
-        display: flex;
+
+        display: none;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
@@ -64,6 +72,7 @@
             color: getColor(text);
             text-decoration: none;
             font-size: 2rem;
+            font-family: $primary-font;
             @include lg{
                 font-size: 4rem;
             }

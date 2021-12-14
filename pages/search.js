@@ -1,9 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import router, { useRouter } from 'next/router'
+import Heading from '../components/Heading'
 import Rating from '../components/Rating'
+
 const Search = () => {
     return (
         <div className="search-page">
+            <Heading title={"Resultados de busqueda"} />
             <h1>6 RESULTADOS DE BUSQUEDA </h1>
             <p>Fontaneria en Cochabamba.</p>
             <div className="search-page-results">

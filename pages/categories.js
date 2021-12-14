@@ -1,9 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Heading from "../components/Heading"
 import { CATEGORIES } from "../utils/dummyData"
 const Categories = () => {
     return (
         <div className="categories-page">
+            <Heading title={"Categorias"}/>
             <h1>Categorias de trabajos</h1>
+            
             <div className="categories-page-results">
                 {CATEGORIES.map(category => (
                     <Category key={category.name} {...category} />

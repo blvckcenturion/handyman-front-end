@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-regular-svg-icons'
 import { faUnlockAlt } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
+import Heading from '../components/Heading'
 
 const Login = () => {
 
@@ -10,6 +11,7 @@ const Login = () => {
 
     return (
         <div className="login-page">
+            <Heading title={ "Login" }/>
             <div className="login-page-card">
                 <h1>Inicia Sesion</h1>
                 <form>

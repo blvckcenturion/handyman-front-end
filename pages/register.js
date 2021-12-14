@@ -3,10 +3,12 @@ import { faUser } from '@fortawesome/free-regular-svg-icons'
 import { faKey } from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
 import { AVAILABLE_CITIES, CATEGORIES } from '../utils/dummyData'
+import Heading from '../components/Heading'
 
 const Register = () => {
     return (
         <div className="register-page">
+            <Heading title={"Registrate"}/>
             <form className="register-form" action="">
                 
                 <h1>REGISTRATE</h1>
