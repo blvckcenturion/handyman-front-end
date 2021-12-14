@@ -1,0 +1,79 @@
+.register-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    .register-form {
+        margin: 100px 0;
+        width: 90vw;
+        border: 1px solid getColor(border);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: getColor(text);
+        h1,h2{
+            font-size: 3rem;
+            letter-spacing: 10px;
+            font-family: $primary-font;
+            margin: 40px 0;
+        }
+        h2{
+            font-size: 2.5rem;
+        }
+        div{
+            width: 60%;
+        }
+        &-input{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 15px 0;
+            margin: 20px 0;
+            border: 1px solid getColor(border);
+            border-radius: 15px;
+            input{
+                width: 80%;
+                background-color: transparent;
+                border: none;
+            }
+            svg{
+                width: 30px;
+            }
+        }
+        &-input-section-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 15px 0;
+            input, select{
+                width: 95%;
+                padding: 20px 2.5%;
+                margin: 10px 0;
+                border: 1px solid getColor(border);
+                border-radius: 15px;
+                background-color: transparent;
+                color: getColor(text);
+            }
+            select{
+                width: 100%;
+                padding: 20px 2.5%;
+            }
+            label{
+                
+                font-size: 1.5rem;
+            }
+        }
+        button{
+            width: 60%;
+            padding: 20px 0;
+            border-radius: 15px;
+            border: none;
+            background-color: $green;
+            margin:40px 0;
+        }
+    }
+}

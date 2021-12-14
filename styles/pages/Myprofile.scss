@@ -1,0 +1,50 @@
+.myprofile-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 40px 0;
+
+    color: getColor(text);
+    h1{
+        font-size: 2.5rem;
+        margin: {
+            top: 4rem;
+            bottom: 4rem;
+        }
+    }
+    div {
+        display: grid;
+        grid-template-columns: 1fr;
+        @include lg {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        grid-gap: 20px;
+        width: 100%;
+        div{
+            height: 40vw;
+            @include lg {
+                height: 20vw;
+            }
+            border: 1px solid getColor(border);
+            border-radius: 10px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            svg{
+                height: 15vh;
+            }
+        }
+    }
+}
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    background-color: red;
+}
