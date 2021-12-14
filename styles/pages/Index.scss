@@ -14,7 +14,7 @@
         border-radius: 20px;
         display: flex;
         height: 80vh;
-
+        opacity: 0;
         z-index: 1;
         @include md{
             height: 70vh;
